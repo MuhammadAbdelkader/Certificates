@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mohamed Abdelkader — Certificates</title>
+  <meta name="description" content="Official certificates and credentials of Mohamed Abdelkader — Full Stack MEAN Developer." />
+  <meta property="og:title" content="Mohamed Abdelkader — Certificates" />
+  <meta property="og:description" content="Official certificates and credentials of Mohamed Abdelkader — Full Stack MEAN Developer." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Mono:wght@400;500&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --bg: #0a0a0f;
+      --surface: #111118;
+      --border: #1e1e2e;
+      --gold: #c9a84c;
+      --gold-light: #e8c97a;
+      --gold-dim: rgba(201,168,76,0.12);
+      --text: #e8e6e0;
+      --muted: #6b6a72;
+      --accent-1: #4a9eff;
+      --accent-2: #3ecf8e;
+    }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      font-family: 'DM Sans', sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      min-height: 100vh;
+      overflow-x: hidden;
+    }
+
+    /* Background grain texture */
+    body::before {
+      content: '';
+      position: fixed;
+      inset: 0;
+      background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='0.03'/%3E%3C/svg%3E");
+      pointer-events: none;
+      z-index: 0;
+    }
+
+    /* Ambient glow */
+    body::after {
+      content: '';
+      position: fixed;
+      top: -20%;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 60vw;
+      height: 40vh;
+      background: radial-gradient(ellipse, rgba(201,168,76,0.06) 0%, transparent 70%);
+      pointer-events: none;
+      z-index: 0;
+    }
+
+    header {
+      position: relative;
+      z-index: 1;
+      padding: 4rem 2rem 2rem;
+      text-align: center;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .eyebrow {
+      font-family: 'DM Mono', monospace;
+      font-size: 0.7rem;
+      letter-spacing: 0.25em;
+      color: var(--gold);
+      text-transform: uppercase;
+      margin-bottom: 1.2rem;
+      opacity: 0;
+      animation: fadeUp 0.6s ease forwards 0.1s;
+    }
+
+    h1 {
+      font-family: 'DM Serif Display', serif;
+      font-size: clamp(2rem, 5vw, 3.2rem);
+      font-weight: 400;
+      line-height: 1.15;
+      letter-spacing: -0.02em;
+      color: var(--text);
+      opacity: 0;
+      animation: fadeUp 0.6s ease forwards 0.2s;
+    }
+
+    h1 em {
+      font-style: italic;
+      color: var(--gold-light);
+    }
+
+    .subtitle {
+      margin-top: 1rem;
+      font-size: 0.9rem;
+      color: var(--muted);
+      font-weight: 300;
+      opacity: 0;
+      animation: fadeUp 0.6s ease forwards 0.3s;
+    }
+
+    nav {
+      display: flex;
+      justify-content: center;
+      gap: 1.5rem;
+      margin-top: 2rem;
+      flex-wrap: wrap;
+      opacity: 0;
+      animation: fadeUp 0.6s ease forwards 0.4s;
+    }
+
+    nav a {
+      font-family: 'DM Mono', monospace;
+      font-size: 0.72rem;
+      letter-spacing: 0.1em;
+      color: var(--muted);
+      text-decoration: none;
+      text-transform: uppercase;
+      transition: color 0.2s;
+      padding-bottom: 2px;
+      border-bottom: 1px solid transparent;
+    }
+
+    nav a:hover {
+      color: var(--gold);
+      border-bottom-color: var(--gold);
+    }
+
+    main {
+      position: relative;
+      z-index: 1;
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 4rem 2rem 6rem;
+    }
+
+    .section-label {
+      font-family: 'DM Mono', monospace;
+      font-size: 0.68rem;
+      letter-spacing: 0.2em;
+      color: var(--gold);
+      text-transform: uppercase;
+      margin-bottom: 2.5rem;
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      opacity: 0;
+      animation: fadeUp 0.6s ease forwards 0.5s;
+    }
+
+    .section-label::after {
+      content: '';
+      flex: 1;
+      height: 1px;
+      background: var(--border);
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+      gap: 1.5rem;
+    }
+
+    .card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      overflow: hidden;
+      text-decoration: none;
+      color: inherit;
+      display: flex;
+      flex-direction: column;
+      transition: border-color 0.25s, transform 0.25s, box-shadow 0.25s;
+      opacity: 0;
+      animation: fadeUp 0.5s ease forwards;
+      position: relative;
+    }
+
+    .card:hover {
+      border-color: var(--gold);
+      transform: translateY(-4px);
+      box-shadow: 0 16px 40px rgba(0,0,0,0.4), 0 0 0 1px rgba(201,168,76,0.1);
+    }
+
+    .card:nth-child(1) { animation-delay: 0.55s; }
+    .card:nth-child(2) { animation-delay: 0.65s; }
+    .card:nth-child(3) { animation-delay: 0.75s; }
+
+    .card-preview {
+      width: 100%;
+      aspect-ratio: 4/3;
+      background: #0d0d14;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-bottom: 1px solid var(--border);
+      overflow: hidden;
+      position: relative;
+    }
+
+    .card-preview iframe {
+      width: 100%;
+      height: 100%;
+      border: none;
+      pointer-events: none;
+      transform-origin: top left;
+    }
+
+    .card-preview .overlay {
+      position: absolute;
+      inset: 0;
+      background: transparent;
+    }
+
+    .card-badge {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      font-family: 'DM Mono', monospace;
+      font-size: 0.6rem;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      padding: 3px 8px;
+      border-radius: 4px;
+      font-weight: 500;
+    }
+
+    .badge-cert {
+      background: rgba(74,158,255,0.15);
+      color: var(--accent-1);
+      border: 1px solid rgba(74,158,255,0.25);
+    }
+
+    .badge-id {
+      background: rgba(62,207,142,0.15);
+      color: var(--accent-2);
+      border: 1px solid rgba(62,207,142,0.25);
+    }
+
+    .card-body {
+      padding: 1.25rem 1.5rem 1.5rem;
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .card-issuer {
+      font-family: 'DM Mono', monospace;
+      font-size: 0.65rem;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      color: var(--muted);
+      margin-bottom: 0.5rem;
+    }
+
+    .card-title {
+      font-family: 'DM Serif Display', serif;
+      font-size: 1.15rem;
+      font-weight: 400;
+      line-height: 1.3;
+      color: var(--text);
+      margin-bottom: 0.75rem;
+    }
+
+    .card-meta {
+      font-size: 0.78rem;
+      color: var(--muted);
+      line-height: 1.6;
+      font-weight: 300;
+      flex: 1;
+    }
+
+    .card-meta strong {
+      color: #a0a0b0;
+      font-weight: 500;
+    }
+
+    .card-footer {
+      margin-top: 1.25rem;
+      padding-top: 1rem;
+      border-top: 1px solid var(--border);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .card-date {
+      font-family: 'DM Mono', monospace;
+      font-size: 0.65rem;
+      letter-spacing: 0.1em;
+      color: var(--muted);
+    }
+
+    .card-link {
+      font-family: 'DM Mono', monospace;
+      font-size: 0.65rem;
+      letter-spacing: 0.1em;
+      color: var(--gold);
+      text-transform: uppercase;
+      display: flex;
+      align-items: center;
+      gap: 5px;
+    }
+
+    .card-link svg {
+      transition: transform 0.2s;
+    }
+
+    .card:hover .card-link svg {
+      transform: translate(2px, -2px);
+    }
+
+    /* Individual certificate viewer pages */
+    .viewer-wrap {
+      display: none;
+    }
+
+    footer {
+      position: relative;
+      z-index: 1;
+      text-align: center;
+      padding: 2rem;
+      border-top: 1px solid var(--border);
+      font-family: 'DM Mono', monospace;
+      font-size: 0.65rem;
+      letter-spacing: 0.1em;
+      color: var(--muted);
+    }
+
+    footer a {
+      color: var(--gold);
+      text-decoration: none;
+    }
+
+    footer a:hover { text-decoration: underline; }
+
+    @keyframes fadeUp {
+      from { opacity: 0; transform: translateY(16px); }
+      to   { opacity: 1; transform: translateY(0); }
+    }
+
+    @media (max-width: 600px) {
+      header { padding: 3rem 1.5rem 1.5rem; }
+      main { padding: 3rem 1.5rem 4rem; }
+      .grid { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <p class="eyebrow">Mohamed Abdelkader · Official Credentials</p>
+  <h1>Certificates &amp; <em>Credentials</em></h1>
+  <p class="subtitle">Full Stack Developer · MEAN Stack Specialist · Verified Freelancer</p>
+  <nav>
+    <a href="https://muhammadabdelkader.github.io/My-Portfolio/" target="_blank">Portfolio</a>
+    <a href="https://muhammadabdelkader.github.io/CV/" target="_blank">CV</a>
+    <a href="https://linkedin.com/in/muhammadabdelkader" target="_blank">LinkedIn</a>
+    <a href="https://github.com/MuhammadAbdelkader" target="_blank">GitHub</a>
+  </nav>
+</header>
+
+<main>
+  <p class="section-label">Verified Documents</p>
+
+  <div class="grid">
+
+    <!-- NTI Certificate -->
+    <a class="card" href="./nti-mean-stack-career-accelerator" title="NTI — MEAN Stack Web Developer Career Accelerator Certificate">
+      <div class="card-preview">
+        <iframe
+          src="./nti-mean-stack-career-accelerator.pdf"
+          title="NTI MEAN Stack Certificate Preview"
+          tabindex="-1"
+          aria-hidden="true"
+          loading="lazy"
+        ></iframe>
+        <div class="overlay"></div>
+        <span class="card-badge badge-cert">Certificate</span>
+      </div>
+      <div class="card-body">
+        <p class="card-issuer">NTI · Digital Egypt Youth</p>
+        <h2 class="card-title">MEAN Stack Web Developer Career Accelerator</h2>
+        <p class="card-meta">
+          180 technical hours + 30 freelancing hours coaching.<br/>
+          <strong>Score: 90%</strong> · Student ID: 195909
+        </p>
+        <div class="card-footer">
+          <span class="card-date">Jun – Sep 2025</span>
+          <span class="card-link">
+            View
+            <svg width="11" height="11" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M2 10L10 2M10 2H4M10 2V8" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </span>
+        </div>
+      </div>
+    </a>
+
+    <!-- ITIDA Certificate -->
+    <a class="card" href="./itida-gigs-freelancing-certificate" title="ITIDA Gigs — Freelancing Training Certificate">
+      <div class="card-preview">
+        <iframe
+          src="./itida-gigs-freelancing-certificate.pdf"
+          title="ITIDA Gigs Certificate Preview"
+          tabindex="-1"
+          aria-hidden="true"
+          loading="lazy"
+        ></iframe>
+        <div class="overlay"></div>
+        <span class="card-badge badge-cert">Certificate</span>
+      </div>
+      <div class="card-body">
+        <p class="card-issuer">ITIDA + eyouth</p>
+        <h2 class="card-title">ITIDA Gigs Freelancing Training Program</h2>
+        <p class="card-meta">
+          3-month freelance training program.<br/>
+          <strong>Certified by ITIDA CEO</strong> — Eng. Ahmed El-Zaher
+        </p>
+        <div class="card-footer">
+          <span class="card-date">2025</span>
+          <span class="card-link">
+            View
+            <svg width="11" height="11" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M2 10L10 2M10 2H4M10 2V8" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </span>
+        </div>
+      </div>
+    </a>
+
+    <!-- Freelancer ID -->
+    <a class="card" href="./itida-freelancer-id" title="ITIDA Official Freelancer ID">
+      <div class="card-preview">
+        <iframe
+          src="./itida-freelancer-id.pdf"
+          title="Freelancer ID Preview"
+          tabindex="-1"
+          aria-hidden="true"
+          loading="lazy"
+        ></iframe>
+        <div class="overlay"></div>
+        <span class="card-badge badge-id">Official ID</span>
+      </div>
+      <div class="card-body">
+        <p class="card-issuer">ITIDA · Freelancer.eg</p>
+        <h2 class="card-title">Official Freelancer ID</h2>
+        <p class="card-meta">
+          ID: <strong>4004360199</strong><br/>
+          Valid: Feb 2026 – Feb 2027
+        </p>
+        <div class="card-footer">
+          <span class="card-date">Issued 25 Feb 2026</span>
+          <span class="card-link">
+            View
+            <svg width="11" height="11" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M2 10L10 2M10 2H4M10 2V8" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </span>
+        </div>
+      </div>
+    </a>
+
+  </div>
+</main>
+
+<footer>
+  <span>© 2026 Mohamed Abdelkader · </span>
+  <a href="mailto:moha7med.abdelkader@gmail.com">moha7med.abdelkader@gmail.com</a>
+  <span> · </span>
+  <a href="https://muhammadabdelkader.github.io/My-Portfolio/" target="_blank">Portfolio</a>
+</footer>
+
+</body>
+</html>
