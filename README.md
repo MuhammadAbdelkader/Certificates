@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=6,11,20&height=180&section=header&text=Certificates%20%26%20Credentials&fontSize=42&fontColor=fff&animation=twinkling&fontAlignY=32&desc=Mohamed%20Abdelkader%20Abdelmonem&descAlignY=55&descSize=18" width="100%"/>
+<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=28&duration=3000&pause=1000&color=C9A84C&center=true&vCenter=true&width=600&lines=Certificates+%26+Credentials;Mohamed+Abdelkader+Abdelmonem" alt="Certificates & Credentials — Mohamed Abdelkader" width="100%"/>
 
 <br/>
 
@@ -75,7 +75,7 @@ Certificates/
 
 <div align="center">
 
-<img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=6,11,20&height=100&section=footer&animation=twinkling" width="100%"/>
+<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=14&duration=3000&pause=1000&color=6B6A72&center=true&vCenter=true&width=400&lines=Full+Stack+Developer+·+MEAN+Stack+·+Egypt" alt="Mohamed Abdelkader" width="100%"/>
 
 ![Last Updated](https://img.shields.io/badge/Last%20Updated-February%202026-c9a84c?style=flat-square)
 ![Status](https://img.shields.io/badge/Status-Active-3ecf8e?style=flat-square)
