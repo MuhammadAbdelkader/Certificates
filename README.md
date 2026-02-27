@@ -75,10 +75,11 @@ Certificates/
 
 <div align="center">
 
-<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=14&duration=3000&pause=1000&color=6B6A72&center=true&vCenter=true&width=400&lines=Full+Stack+Developer+·+MEAN+Stack+·+Egypt" alt="Mohamed Abdelkader" width="100%"/>
+<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=14&duration=3000&pause=1000&color=6B6A72&center=true&vCenter=true&width=400&lines=Full+Stack+Developer+%C2%B7+MEAN+Stack+%C2%B7+Egypt" alt="Full Stack Developer · MEAN Stack · Egypt" width="100%"/>
 
 ![Last Updated](https://img.shields.io/badge/Last%20Updated-February%202026-c9a84c?style=flat-square)
 ![Status](https://img.shields.io/badge/Status-Active-3ecf8e?style=flat-square)
 ![Made with](https://img.shields.io/badge/Made%20with-❤️-red?style=flat-square)
 
 </div>
+
