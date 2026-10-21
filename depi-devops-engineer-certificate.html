@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>DEPI — DevOps Engineer Certificate | Mohamed Abdelkader</title>
+  <meta name="description" content="Certificate of completion for the DEPI DevOps Engineer program — Digital Egypt Pioneers Initiative, Round 4. Issued to Mohamed Abdelkader Abdelmonem Ahmed. Official certificate viewer." />
+  <meta name="author" content="Mohamed Abdelkader Abdelmonem Ahmed" />
+  <meta property="og:title" content="DEPI DevOps Engineer Certificate | Mohamed Abdelkader" />
+  <meta property="og:description" content="Official DEPI DevOps Engineer certificate — Round 4. Digital Egypt Pioneers Initiative." />
+  <meta property="og:type" content="profile" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Mono:wght@400;500&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --bg: #0a0a0f;
+      --surface: #111118;
+      --border: #1e1e2e;
+      --gold: #c9a84c;
+      --gold-light: #e8c97a;
+      --gold-dim: rgba(201,168,76,0.12);
+      --text: #e8e6e0;
+      --muted: #6b6a72;
+      --accent: #4a9eff;
+      --accent-green: #3ecf8e;
+      --accent-purple: #a78bfa;
+    }
+
+    html, body { height: 100%; }
+
+    body {
+      font-family: 'DM Sans', sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+      overflow-x: hidden;
+    }
+
+    body::before {
+      content: '';
+      position: fixed;
+      top: -20%;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 60vw;
+      height: 40vh;
+      background: radial-gradient(ellipse, rgba(167,139,250,0.06) 0%, transparent 70%);
+      pointer-events: none;
+      z-index: 0;
+    }
+
+    header {
+      position: relative;
+      z-index: 10;
+      padding: 1.25rem 2rem;
+      border-bottom: 1px solid var(--border);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 0.75rem;
+      backdrop-filter: blur(8px);
+      background: rgba(10,10,15,0.8);
+    }
+
+    .back {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      text-decoration: none;
+      font-family: 'DM Mono', monospace;
+      font-size: 0.68rem;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--muted);
+      transition: color 0.2s;
+      flex-shrink: 0;
+    }
+    .back:hover { color: var(--gold); }
+
+    .header-center {
+      flex: 1;
+      text-align: center;
+      min-width: 0;
+    }
+    .header-issuer {
+      font-family: 'DM Mono', monospace;
+      font-size: 0.6rem;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: var(--muted);
+      margin-bottom: 2px;
+    }
+    .header-title {
+      font-family: 'DM Serif Display', serif;
+      font-size: 1rem;
+      font-weight: 400;
+      color: var(--text);
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+    .header-title em {
+      font-style: italic;
+      color: var(--gold-light);
+    }
+
+    .dl-btn {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      text-decoration: none;
+      background: var(--gold);
+      color: #0a0a0f;
+      font-family: 'DM Mono', monospace;
+      font-size: 0.66rem;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      font-weight: 500;
+      padding: 7px 14px;
+      border-radius: 6px;
+      transition: opacity 0.2s, transform 0.2s, box-shadow 0.2s;
+      flex-shrink: 0;
+      white-space: nowrap;
+    }
+    .dl-btn:hover {
+      opacity: 0.9;
+      transform: translateY(-1px);
+      box-shadow: 0 4px 16px rgba(201,168,76,0.3);
+    }
+
+    .meta-bar {
+      position: relative;
+      z-index: 9;
+      padding: 0.65rem 2rem;
+      border-bottom: 1px solid var(--border);
+      display: flex;
+      align-items: center;
+      gap: 0.6rem;
+      flex-wrap: wrap;
+      background: rgba(10,10,15,0.6);
+    }
+
+    .meta-pill {
+      font-family: 'DM Mono', monospace;
+      font-size: 0.62rem;
+      letter-spacing: 0.1em;
+      padding: 3px 10px;
+      border-radius: 20px;
+      border: 1px solid var(--border);
+      color: var(--muted);
+      white-space: nowrap;
+    }
+    .meta-pill.highlight-blue {
+      background: rgba(74,158,255,0.1);
+      border-color: rgba(74,158,255,0.25);
+      color: var(--accent);
+    }
+    .meta-pill.highlight-purple {
+      background: rgba(167,139,250,0.1);
+      border-color: rgba(167,139,250,0.3);
+      color: var(--accent-purple);
+    }
+    .meta-pill.highlight-green {
+      background: rgba(62,207,142,0.1);
+      border-color: rgba(62,207,142,0.25);
+      color: var(--accent-green);
+    }
+
+    .verified-badge {
+      margin-left: auto;
+      display: flex;
+      align-items: center;
+      gap: 5px;
+      font-family: 'DM Mono', monospace;
+      font-size: 0.62rem;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--accent-green);
+    }
+
+    .viewer {
+      flex: 1;
+      position: relative;
+      z-index: 1;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .pdf-container {
+      flex: 1;
+      width: 100%;
+      min-height: calc(100vh - 170px);
+      background: #05050a;
+    }
+
+    .pdf-container iframe {
+      width: 100%;
+      height: 100%;
+      min-height: calc(100vh - 170px);
+      border: none;
+      display: block;
+    }
+
+    .pdf-fallback {
+      display: none;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 5rem 2rem;
+      text-align: center;
+      gap: 1.5rem;
+    }
+
+    .pdf-fallback .fallback-icon {
+      width: 56px;
+      height: 56px;
+      border-radius: 14px;
+      background: var(--gold-dim);
+      border: 1px solid rgba(201,168,76,0.2);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--gold);
+    }
+
+    .pdf-fallback h2 {
+      font-family: 'DM Serif Display', serif;
+      font-size: 1.3rem;
+      font-weight: 400;
+      color: var(--text);
+    }
+
+    .pdf-fallback p {
+      color: var(--muted);
+      font-size: 0.88rem;
+      max-width: 360px;
+      line-height: 1.6;
+    }
+
+    .fallback-actions {
+      display: flex;
+      gap: 0.75rem;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    .fallback-actions a {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      padding: 8px 18px;
+      border-radius: 8px;
+      font-family: 'DM Mono', monospace;
+      font-size: 0.7rem;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      text-decoration: none;
+      transition: opacity 0.2s, transform 0.2s;
+    }
+    .fallback-actions a:hover { opacity: 0.8; transform: translateY(-1px); }
+    .fallback-btn-primary { background: var(--gold); color: #0a0a0f; font-weight: 500; }
+    .fallback-btn-secondary { border: 1px solid var(--border); color: var(--muted); }
+
+    footer {
+      position: relative;
+      z-index: 10;
+      border-top: 1px solid var(--border);
+      padding: 0.85rem 2rem;
+      font-family: 'DM Mono', monospace;
+      font-size: 0.6rem;
+      letter-spacing: 0.08em;
+      color: var(--muted);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+      background: rgba(10,10,15,0.8);
+    }
+    footer a { color: var(--gold); text-decoration: none; }
+    footer a:hover { text-decoration: underline; }
+
+    @media (max-width: 768px) {
+      header { padding: 1rem 1.25rem; }
+      .header-center { display: none; }
+      .meta-bar { padding: 0.6rem 1.25rem; }
+      .verified-badge { display: none; }
+      footer { padding: 0.85rem 1.25rem; }
+    }
+
+    @media (max-width: 480px) {
+      .dl-btn span { display: none; }
+      .meta-bar { gap: 0.45rem; }
+      .meta-pill { font-size: 0.58rem; padding: 2px 8px; }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <a class="back" href="./" id="backLink" aria-label="Back to all certificates">
+    <svg width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true">
+      <path d="M9 2L4 7L9 12" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+    </svg>
+    All Certificates
+  </a>
+
+  <div class="header-center">
+    <p class="header-issuer">DEPI · Digital Egypt Pioneers Initiative</p>
+    <p class="header-title">DevOps Engineer <em>· Round 4</em></p>
+  </div>
+
+  <a
+    class="dl-btn"
+    href="./depi-devops-engineer-certificate.pdf"
+    download="Mohamed_Abdelkader_DEPI_DevOps_Engineer_Certificate.pdf"
+    id="downloadBtn"
+    aria-label="Download DEPI DevOps Engineer certificate PDF"
+  >
+    <svg width="12" height="12" viewBox="0 0 14 14" fill="none" aria-hidden="true">
+      <path d="M7 2V9M7 9L4 6M7 9L10 6M2 11H12" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+    </svg>
+    <span>Download PDF</span>
+  </a>
+</header>
+
+<div class="meta-bar" role="region" aria-label="Certificate metadata">
+  <span class="meta-pill">Round 4 — 2025</span>
+  <span class="meta-pill highlight-purple">DevOps Engineer</span>
+  <span class="meta-pill highlight-blue">DEPI · Digital Egypt Pioneers</span>
+  <span class="meta-pill">Mohamed Abdelkader Abdelmonem Ahmed</span>
+
+  <span class="verified-badge" aria-label="Official certificate">
+    <svg width="13" height="13" viewBox="0 0 14 14" fill="none" aria-hidden="true">
+      <path d="M2 7.5C2 4.46 4.46 2 7.5 2S13 4.46 13 7.5 10.54 13 7.5 13 2 10.54 2 7.5Z" stroke="currentColor" stroke-width="1.3"/>
+      <path d="M5 7.5L7 9.5L10.5 6" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/>
+    </svg>
+    Official Certificate
+  </span>
+</div>
+
+<div class="viewer" role="main">
+  <div class="pdf-container" id="pdfContainer">
+    <iframe
+      id="pdfFrame"
+      src="./depi-devops-engineer-certificate.pdf#view=FitH&toolbar=1"
+      title="DEPI DevOps Engineer Round 4 — Certificate of Mohamed Abdelkader Abdelmonem Ahmed"
+      allowfullscreen
+    ></iframe>
+  </div>
+
+  <div class="pdf-fallback" id="pdfFallback" role="alert" aria-live="polite">
+    <div class="fallback-icon" aria-hidden="true">
+      <svg width="28" height="28" viewBox="0 0 24 24" fill="none">
+        <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+        <polyline points="14 2 14 8 20 8" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+        <line x1="12" y1="18" x2="12" y2="12" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+        <line x1="9" y1="15" x2="15" y2="15" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+      </svg>
+    </div>
+    <h2>Certificate PDF</h2>
+    <p>Your browser could not display the PDF inline. Use the options below to view or download the certificate.</p>
+    <div class="fallback-actions">
+      <a class="fallback-btn-primary" href="./depi-devops-engineer-certificate.pdf" target="_blank" rel="noopener" id="openTabBtn">
+        <svg width="12" height="12" viewBox="0 0 12 12" fill="none" aria-hidden="true">
+          <path d="M2 10L10 2M10 2H4M10 2V8" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+        Open in New Tab
+      </a>
+      <a class="fallback-btn-secondary" href="./depi-devops-engineer-certificate.pdf" download="Mohamed_Abdelkader_DEPI_DevOps_Engineer_Certificate.pdf" id="fallbackDownloadBtn">
+        <svg width="12" height="12" viewBox="0 0 14 14" fill="none" aria-hidden="true">
+          <path d="M7 2V9M7 9L4 6M7 9L10 6M2 11H12" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+        Download PDF
+      </a>
+    </div>
+  </div>
+</div>
+
+<footer>
+  <span>
+    Mohamed Abdelkader ·
+    <a href="https://muhammadabdelkader.github.io/Certificates/">Certificates</a>
+  </span>
+  <span>
+    <a href="https://muhammadabdelkader.github.io/My-Portfolio/" target="_blank" rel="noopener">Portfolio</a>
+    ·
+    <a href="https://muhammadabdelkader.github.io/CV/" target="_blank" rel="noopener">CV</a>
+    ·
+    <a href="https://linkedin.com/in/muhammadabdelkader" target="_blank" rel="noopener">LinkedIn</a>
+  </span>
+</footer>
+
+<script>
+  (function () {
+    var frame     = document.getElementById('pdfFrame');
+    var container = document.getElementById('pdfContainer');
+    var fallback  = document.getElementById('pdfFallback');
+
+    function showFallback() {
+      container.style.display = 'none';
+      fallback.style.display  = 'flex';
+    }
+
+    frame.addEventListener('error', showFallback);
+
+    // Detect blank iframe (mobile browsers that cannot render PDFs inline)
+    setTimeout(function () {
+      try {
+        var doc = frame.contentDocument || (frame.contentWindow && frame.contentWindow.document);
+        if (doc && doc.body && doc.body.innerHTML === '') {
+          showFallback();
+        }
+      } catch (e) {
+        // Cross-origin security block = browser IS rendering PDF — do nothing.
+      }
+    }, 3000);
+  })();
+</script>
+
+</body>
+</html>

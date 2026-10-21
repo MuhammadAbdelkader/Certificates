@@ -37,6 +37,7 @@
 | 01 | **MEAN Stack Web Developer Career Accelerator** | NTI · Digital Egypt Youth | `90%` | [![View](https://img.shields.io/badge/View-4a9eff?style=flat-square&logo=googlechrome&logoColor=white)](https://muhammadabdelkader.github.io/Certificates/nti-mean-stack-career-accelerator) |
 | 02 | **ITIDA Gigs Freelancing Training Program** | ITIDA + eyouth | `✓ Completed` | [![View](https://img.shields.io/badge/View-a78bfa?style=flat-square&logo=googlechrome&logoColor=white)](https://muhammadabdelkader.github.io/Certificates/itida-gigs-freelancing-certificate) |
 | 03 | **Official Freelancer ID** | ITIDA · Freelancer.eg | `Active ✓` | [![View](https://img.shields.io/badge/View-3ecf8e?style=flat-square&logo=googlechrome&logoColor=white)](https://muhammadabdelkader.github.io/Certificates/itida-freelancer-id) |
+| 04 | **DevOps Engineer — Round 4** | DEPI · Digital Egypt Pioneers Initiative | `✓ Certified` | [![View](https://img.shields.io/badge/View-c9a84c?style=flat-square&logo=googlechrome&logoColor=black)](https://muhammadabdelkader.github.io/Certificates/depi-devops-engineer-certificate) |
 
 </div>
 
@@ -52,6 +53,8 @@ Certificates/
 ├── itida-gigs-freelancing-certificate.pdf      # ITIDA certificate file
 ├── itida-freelancer-id.html                    # Freelancer ID viewer
 ├── itida-freelancer-id.pdf                     # Freelancer ID file
+├── depi-devops-engineer-certificate.html       # DEPI DevOps certificate viewer
+├── depi-devops-engineer-certificate.pdf        # DEPI DevOps certificate file
 └── README.md
 ```
 
